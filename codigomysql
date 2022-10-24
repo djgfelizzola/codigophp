@@ -1,0 +1,16 @@
+<?php
+
+$servername = "localhost";
+$database = "bd_creada";
+$username = "root";
+$password = "root";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+}else{
+print("Conexion realizada");
+}
+
+?>
